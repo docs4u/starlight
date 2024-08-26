@@ -1,0 +1,1 @@
+const c=document.querySelectorAll(".icon-preview");c.forEach(e=>{e.addEventListener("click",()=>{const o=e.dataset.name,n=`<Icon name="${o}" />`;navigator.clipboard.writeText(n);const t=e.querySelector("[aria-live]");t&&(t.textContent="Copied!",setTimeout(()=>{t.textContent=o},1e3))})});
